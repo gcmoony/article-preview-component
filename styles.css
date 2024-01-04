@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --regular-font-size: 13px;
+  --font-bold: 700;
+  --font-normal: 500;
+
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--light-grayish-blue);
+  font-size: var(--regular-font-size);
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 770px;
+  border-radius: .5em;
+  /* overflow: hidden; */
+  margin: 20px;
+  
+  position: relative;
+}
+
+.card-img {
+  flex: 3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  border-radius: .5em .5em 0 0;
+}
+
+.card-info {
+  flex: 3;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info .title {
+  font-size: large;
+}
+
+.card-interact {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+
+.card-interact > img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card-interact > .card-author {
+  flex: 1;
+}
+
+.card-interact > div:not(.card-author) {
+  justify-self: flex-end;
+}
+
+.share-btn {
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  padding: .5em;
+  background-color: var(--light-grayish-blue);
+  
+}
+
+.share-btn:hover {
+  cursor: pointer;
+}
+
+.share-btn > *:not(img) {
+  cursor: default;
+}
+
+.share-btn > #l-pop > div {
+  cursor: pointer;
+}
+
+
+.light-text {
+  color: var(--desaturated-dark-blue);
+}
+
+.date {
+  color: var(--grayish-blue);
+}
+
+.bold {
+  font-weight: var(--font-bold);
+  color: var(--very-dark-grayish-blue);
+}
+
+.popup {
+  background: var(--very-dark-grayish-blue);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  border-radius: 0 0 .5em .5em;
+  /* opacity: 50%; */
+}
+
+.popup > div, .small-popup > div {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.popup > div {
+  cursor: pointer;
+}
+
+
+.spaced-text {
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: .5ch;
+}
+
+.relative {
+  position: relative;
+}
+
+.small-popup {
+  position: absolute;
+  background: var(--very-dark-grayish-blue);
+  display: none;
+  right: -80px; 
+  bottom: 51px;
+  padding: 1em 3em;
+  justify-content: center;
+  gap: 1.5em;
+  align-items: center;
+  border-radius: .5em;
+}
+
+.triangle {
+  background-color: var(--very-dark-grayish-blue);
+  width: 20px;
+  height: 20px;
+  
+  position: absolute;
+  
+  display: none;
+}
+
+.triangle.top {
+  right: 3px;
+  bottom: 45px;
+  z-index: 1;
+  rotate: 45deg;
+}
+
+.triangle.left {
+  background-color: white;
+  height: 10px;
+  
+  rotate: -45deg;
+  bottom: 35px;
+  right: -3px;
+  z-index: 2;
+}
+
+.triangle.right {
+  background-color: white;
+  rotate: 45deg;
+  bottom: 35px;
+  left: -4px;
+  z-index: 2;
+  height: 10px;
+  /* border: red solid 1px; */
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 25vh;
+    margin-bottom: 5em;
+    width: 80%;
+  }
+
+  .card-img {
+    border-radius: .5em 0 0 .5em;
+  }
+
+  .popup {
+    display: none;
+  }
+
+  .small-popup {
+    display: flex;
+  }
+
+  .triangle { 
+    display: block;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+.dark-bg {
+  background-color: var(--desaturated-dark-blue);
+}
