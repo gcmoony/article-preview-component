@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Article preview component</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./script.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="card">
+    <!-- <img src="./images/drawers.jpg" alt="Picture of drawers"> -->
+    <div class="card-img" style="background-image: url(./images/drawers.jpg);"></div>
+    <div class="card-info">
+      <header class="title bold">Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home</header>
+      <p class="description light-text">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>
+      <div class="card-interact">
+        <img src="./images/avatar-michelle.jpg" alt="Picture of Michelle">
+        <div class="card-author">
+          <span class="bold ">Michelle Appleton</span><br>
+          <span class="date">28 Jun 2020</span>
+        </div>
+        <div>
+          <button id="share-p" class="share-btn relative">
+            <div id="l-pop" class="small-popup hidden">
+              <span class="bold spaced-text">Share</span>
+              <div style="background-image: url(./images/icon-facebook.svg);"></div>
+              <div style="background-image: url(./images/icon-twitter.svg);"></div>
+              <div style="background-image: url(./images/icon-pinterest.svg);"></div>
+            </div>
+            <div id="bubble" class="triangle hidden top"></div>
+            <img id="share-icon-l" src="./images/icon-share.svg" alt="Share">
+            <img class="hidden" id="share-icon-l-invert" src="./images/icon-share-invert.svg" alt="Share">
+          </button>
+        </div>
+        
+      </div>
+
+    </div>
+    <div id="p-pop" class="popup hidden">
+      <span class="bold spaced-text">Share</span>
+      <div style="background-image: url(./images/icon-facebook.svg);"></div>
+      <div style="background-image: url(./images/icon-twitter.svg);"></div>
+      <div style="background-image: url(./images/icon-pinterest.svg);"></div>
+      <button id="share-l" class="share-btn">
+        <img id="share-icon" src="./images/icon-share.svg" alt="Share">
+        <img class="hidden" id="share-icon-invert" src="./images/icon-share-invert.svg" alt="Share">
+      </button>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/GCMoony">George Cadel-Munoz</a>.
+  </div>
+</body>
+</html>
