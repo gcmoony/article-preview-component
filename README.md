@@ -1,7 +1,7 @@
 # Frontend Mentor - Article preview component
 [A <i>Frontend Mentor</i> Coding Challenge](https://www.frontendmentor.io/)
 
-<!-- [Link to Solution](https://gcmoony.github.io/blog-preview-card-main/) -->
+[Link to Solution](https://gcmoony.github.io/article-preview-component/)
 
 This is my solution to the [Article preview component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT). 
 
